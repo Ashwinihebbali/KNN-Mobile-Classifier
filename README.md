@@ -31,38 +31,6 @@ This initiative implements a comprehensive machine learning pipeline for mobile 
 - **Production-Ready Code**: Clean, documented, and maintainable implementation
 - **Comprehensive Analysis**: Full exploratory data analysis and preprocessing pipeline
 
----
-
-## Dataset Description
-
-### Features
-
-| Feature | Description |
-|---------|-------------|
-| `battery_power` | Battery capacity in mAh |
-| `clock_speed` | CPU clock speed in GHz |
-| `fc` | Front camera megapixels |
-| `int_memory` | Internal memory in GB |
-| `m_dep` | Mobile depth in mm |
-| `mobile_wt` | Mobile weight in grams |
-| `n_cores` | Number of processor cores |
-| `pc` | Rear camera megapixels |
-| `px_height` | Pixel resolution height |
-| `px_width` | Pixel resolution width |
-| `ram` | RAM capacity in MB |
-| `sc_h` | Screen height in cm |
-| `sc_w` | Screen width in cm |
-| `talk_time` | Maximum talk time in hours |
-| `Price` | Market price range (target variable) |
-
-### Data Characteristics
-
-- **Total Records**: 2,000+ mobile phones
-- **Total Features**: 15 (14 input features + 1 target)
-- **Data Type**: Numeric
-- **Target Variable**: Price (classification into price categories)
-
----
 
 ## Methodology
 
@@ -89,22 +57,6 @@ This initiative implements a comprehensive machine learning pipeline for mobile 
    - Identified and handled outliers using quantile-based methods
    - Assessed feature importance for model optimization
 
-### Model Architecture
-
-**Algorithm**: K-Nearest Neighbors (KNN) Classification
-- **Rationale**: Non-parametric approach suitable for multi-class segmentation with clear feature relationships
-- **Distance Metric**: Euclidean distance
-- **Training Strategy**: 80-20 train-test split
-- **Validation Approach**: Cross-validation for robust performance estimation
-
-### Performance Metrics
-
-- **Accuracy**: Overall classification correctness
-- **Precision**: Performance on positive class predictions
-- **Recall**: Sensitivity to market segment detection
-- **F1-Score**: Harmonic mean for balanced evaluation
-
----
 
 ## Project Structure
 
@@ -209,26 +161,6 @@ The KNN model successfully segments the mobile phone market into distinct price 
 
 ---
 
-## Model Performance & Results
-
-### Classification Outcomes
-
-The trained KNN classifier achieves robust predictive performance:
-
-- **High Accuracy**: Correctly classifies majority of devices into appropriate market segments
-- **Balanced Precision/Recall**: Maintains equilibrium across market tiers
-- **Cross-Validation**: Validates model generalization capability
-
-### Business Applications
-
-- **Price Strategy**: Support pricing decisions aligned with competitive landscape
-- **Product Positioning**: Enable accurate market tier placement
-- **Portfolio Analysis**: Benchmark products against market competitors
-- **Demand Forecasting**: Predict market demand based on segment characteristics
-- **Risk Mitigation**: Identify pricing anomalies and strategic opportunities
-
----
-
 ## Future Enhancements & Roadmap
 
 ### Algorithm Optimization
@@ -260,19 +192,6 @@ The trained KNN classifier achieves robust predictive performance:
 - [ ] **Real-Time Updates**: Integrate live market data feeds
 
 ---
-
-## Project Information
-
-**Project Name**: KNN Mobile Classifier  
-**Objective**: Mobile phone market segmentation and price range prediction  
-**Algorithm**: K-Nearest Neighbors (KNN) Classification  
-**Dataset Size**: 2,000+ mobile phone records  
-**Features**: 15 hardware specifications  
-**Status**: Active Development  
-**Last Updated**: February 2026
-
----
-
 ## Contributing
 
 We welcome contributions to enhance this project. Please follow these guidelines:
@@ -289,33 +208,3 @@ We welcome contributions to enhance this project. Please follow these guidelines
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
----
-
-## Citation
-
-If you use this project in your research or work, please cite:
-
-```bibtex
-@project{knn_mobile_classifier,
-  title={KNN Mobile Classifier: Machine Learning for Mobile Phone Market Segmentation},
-  year={2026},
-  url={https://github.com/yourusername/knn-mobile-classifier}
-}
-```
-
----
-
-## Contact & Support
-
-**Project Repository**: [github.com/yourusername/knn-mobile-classifier](https://github.com/yourusername/knn-mobile-classifier)
-
-For questions, issues, or suggestions:
-- Open an issue in the GitHub repository
-- Review the Problem Statement documentation
-- Consult the Jupyter notebook for implementation details
-
-**Disclaimer**: This project is intended for educational and research purposes in machine learning and market analysis. Predictions should be validated with domain experts before use in production environments.
-
----
-
-**© 2026 - All Rights Reserved**
